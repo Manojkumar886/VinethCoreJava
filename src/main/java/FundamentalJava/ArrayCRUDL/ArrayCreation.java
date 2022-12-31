@@ -17,7 +17,7 @@ public class ArrayCreation
 
        // System.out.println(Arrays.toString(chocolatename));//tostring method
 
-        for(String choco:chocolatename)
+        for(String choco:chocolatename) ///for-each
         {
             System.out.print(choco+" ");
         }
