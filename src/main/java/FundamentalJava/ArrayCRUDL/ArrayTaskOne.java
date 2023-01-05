@@ -10,26 +10,46 @@ public class ArrayTaskOne
     public void connecting()
     {
         int[] spiral=new int[array.length* 3];
-        int row=0,col=0,index=0;
-        for(;col< array.length;col++,index++) //col-3
+        int row=2,col=0,index=0;
+        for(;col< array.length;col++,index++)
         {
             spiral[index]=array[row][col];
         }
-        col--;row++;  //col=2,row=1
-        for(;row< array.length;row++,index++) //row=3
+        col--;row--;
+        for(;row>=0;row--,index++)
         {
             spiral[index]=array[row][col];
         }
-        row--;col--;  //col=2,row=2
-        for(;col>=0;col--,index++)   //col=-1
+        col--;row++;
+        for(;col>=0;col--,index++)
         {
-            spiral[index]=array[row][col];  //row=2
+            spiral[index]=array[row][col];
         }
-        row--;col++;  //col=0 ,row=1
+        row++;col++;
         for(;col<=1;col++,index++)
         {
             spiral[index]=array[row][col];
         }
+//        int row=0,col=0,index=0;
+//        for(;col< array.length;col++,index++) //col-3
+//        {
+//            spiral[index]=array[row][col];
+//        }
+//        col--;row++;  //col=2,row=1
+//        for(;row< array.length;row++,index++) //row=3
+//        {
+//            spiral[index]=array[row][col];
+//        }
+//        row--;col--;  //col=2,row=2
+//        for(;col>=0;col--,index++)   //col=-1
+//        {
+//            spiral[index]=array[row][col];  //row=2
+//        }
+//        row--;col++;  //col=0 ,row=1
+//        for(;col<=1;col++,index++)
+//        {
+//            spiral[index]=array[row][col];
+//        }
 
         System.out.println(Arrays.toString(spiral));
         System.out.println(spiral.length);
