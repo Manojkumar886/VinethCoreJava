@@ -1,5 +1,4 @@
 package FundamentalJava.Thread;
-
 public class MultiThreadingSample
 {
     public static void main(String[] args) throws InterruptedException  //Main-Thread...
