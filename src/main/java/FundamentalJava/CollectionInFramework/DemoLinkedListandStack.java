@@ -1,5 +1,6 @@
 package FundamentalJava.CollectionInFramework;
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.Stack;
 
@@ -15,6 +16,11 @@ public class DemoLinkedListandStack
         list1.add(565);
         list1.addFirst(99);
         list1.add(4,11);
+        Iterator i=list1.iterator();
+        while(i.hasNext())
+        {
+            System.out.println(i.next());
+        }
 
         System.out.println("List all values"+list1);
         list1.remove(2);
