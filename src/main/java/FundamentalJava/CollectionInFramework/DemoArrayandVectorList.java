@@ -1,5 +1,7 @@
 package FundamentalJava.CollectionInFramework;
 
+import FundamentalJava.CollectionInFramework.DemoMaps.SampleMOdifiers;
+
 import java.util.ArrayList;
 import java.util.Vector;
 
@@ -7,6 +9,7 @@ public class DemoArrayandVectorList
 {
     public static void main(String[] args)
     {
+
         ArrayList obj1=new ArrayList();
         obj1.add("Manojkumar");
         obj1.add(8.2f);

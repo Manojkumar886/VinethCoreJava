@@ -1,6 +1,8 @@
 package FundamentalJava;
 
-public class MethodProcess
+import FundamentalJava.CollectionInFramework.DemoMaps.SampleMOdifiers;
+
+public class MethodProcess extends  SampleMOdifiers
 {
     public void processing()
     {
@@ -40,6 +42,10 @@ public class MethodProcess
         obj.gettingused(200);
       //  MethodProcess.Checking();
       Checking();
+
+        SampleMOdifiers access=new SampleMOdifiers();
+        access.accessModifier();
+        obj.protectedmodifier();
 
     }
 }

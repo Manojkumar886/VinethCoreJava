@@ -1,5 +1,6 @@
 package FundamentalJava.CollectionInFramework;
 
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class DemoTreeset
@@ -15,7 +16,11 @@ public class DemoTreeset
 
         Joy.add(new Supermarket("AachiMasala",100,300.0));
 
-        System.out.println(Joy);
+        Iterator i=Joy.iterator();
+        while(i.hasNext())
+        {
+            System.out.println(i.next());
+        }
 
 
 
@@ -70,6 +75,6 @@ class Supermarket implements  Comparable<Supermarket>
     @Override
     public int compareTo(Supermarket obj) {
 //        return obj.productName.compareTo(this.productName);
-        return obj.price.compareTo(this.price);
+        return obj.quantity.compareTo(this.quantity);
     }
 }
