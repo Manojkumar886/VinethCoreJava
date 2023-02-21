@@ -30,8 +30,5 @@ public class DemoWriting
 
         fos.close();
         scan.close();
-
-
-
     }
 }
