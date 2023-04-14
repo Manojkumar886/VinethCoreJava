@@ -21,7 +21,8 @@ public class VariablesType
     }
 
     public void AcoountDetails()
-    {System.out.println("Branch Name is "+BranchName);//global variable
+    {
+        System.out.println("Branch Name is "+BranchName);//global variable
         Long AccountNo=54637283928l;
         String IfscCode="IDIB020001";//Local Variable
         System.out.println("Account no is "+AccountNo);

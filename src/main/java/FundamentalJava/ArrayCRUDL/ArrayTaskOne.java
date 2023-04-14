@@ -9,6 +9,14 @@ public class ArrayTaskOne
     // [55,65,75,35,95,85,45,15,25]
     public void connecting()
     {
+        for(int row=0;row<array.length;row++)
+        {
+            for(int col=0;col<array[row].length;col++) {
+                System.out.print(array[row][col]+" ");
+            }
+            System.out.println();
+        }
+
         int[] spiral=new int[array.length* 3];
         int row=2,col=0,index=0;
         for(;col< array.length;col++,index++)
@@ -52,17 +60,14 @@ public class ArrayTaskOne
 //        }
 
         System.out.println(Arrays.toString(spiral));
-        System.out.println(spiral.length);
-        for(int i= spiral.length-1;i>=0;i--)
-        {
-            System.out.print(spiral[i]+" ");
-        }
+
     }
 
     public static void main(String[] args)
     {
         ArrayTaskOne task=new ArrayTaskOne();
         task.connecting();
+
 
 
     }
